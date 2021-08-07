@@ -1,7 +1,9 @@
 <template>
 <div class="header">
   <div class="nav">
-    <img src="../assets/cnodejs_light.svg" alt="logo">
+    <a href="/">
+      <img src="../assets/cnodejs_light.svg" alt="logo">
+    </a>
     <ul>
       <li><a href="">首页</a></li>
       <li><a href="">新手入门</a></li>
@@ -28,14 +30,15 @@ export default {
 .nav{
   max-width: 1500px;
   margin: 0 auto;
+  position: relative;
 }
 img{
   width: 120px;
-  margin-left: 70px;
-  padding-top: 10px;
+  position: absolute;
+  left: 70px;
+  margin-top: 10px;
 }
 ul{
-  list-style:none;
   float: right;
   margin-right: 60px;
   height: 50px;
